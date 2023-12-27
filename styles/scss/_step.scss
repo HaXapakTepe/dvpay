@@ -1,0 +1,127 @@
+.step {
+  &__wrapper {
+    @include fluid(margin-top, 30px, 90px);
+    @include fluid(margin-bottom, 60px, 230px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 80px, 120px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 50px, 88px);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+
+    &:first-child {
+      .step__item-num {
+        @include fluid(left, 9px, 12px);
+      }
+    }
+
+    &-num {
+      position: absolute;
+      left: 0;
+      @include fluid(top, -45px, -75px);
+      @include fluid(font-size, 150px, 279px);
+      font-weight: 900;
+      line-height: 1;
+      opacity: 0.3;
+      background: linear-gradient(180deg, #AAD302 0%, rgba(141, 173, 10, 0.00) 83.67%);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: -1;
+    }
+
+    &-title {
+      color: var(--Main-GrayBlue, #374664);
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 700;
+      @include fluid(margin-bottom, 20px, 64px);
+    }
+
+    &-box {
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      width: 83%;
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid(padding-top, 20px, 40px);
+      @include fluid(padding-bottom, 20px, 40px);
+      @include fluid(padding-left, 30px, 64px);
+      @include fluid(padding-right, 30px, 64px);
+      background-color: rgba(255, 255, 255, 0.70);
+      border: 1px solid rgba(55, 70, 100, 0.10);
+      box-shadow: 0px 4px 32px rgba(2, 18, 87, 0.10);
+      border-radius: 4px;
+    }
+
+    &-block {
+      display: flex;
+      align-items: end;
+      @include fluid(gap, 20px, 40px);
+    }
+
+    &-text {
+      color: var(--Main-GrayBlue, #374664);
+      font-weight: 400;
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 15px);
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .step {
+    &__item {
+      &-box {
+        width: 78%;
+      }
+
+      &-block {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .step {
+    &__inner {
+      gap: 80px;
+    }
+
+    &__item {
+
+      &:first-child {
+        .step__item-num {
+          left: 50%;
+          transform: translate(-50%, -130%);
+        }
+      }
+
+      &-num {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -130%);
+      }
+
+      &-box {
+        width: unset;
+      }
+    }
+  }
+}

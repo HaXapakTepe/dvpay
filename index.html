@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/css/icons.css">
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/style.css?v=0.0001">
+  <title>DVPay</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Цены
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Как это работает
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  API
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Manual
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Support
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <div class="header__lang accordion">
+                  <div class="header__lang-item">
+                    <div class="header__lang-block ">
+                      <img class="header__lang-flag header__lang-flag--first"
+                        src="./assets/images/icons/russian-federation.svg" alt="">
+                      <img class="header__lang-flag header__lang-flag--last" src="./assets/images/icons/eng.svg" alt="">
+                    </div>
+                    <div class="header__lang-now">
+                      Ru
+                    </div>
+                  </div>
+                  <div class="accordion__content accordion__content--abs">
+                    <div class="header__lang-box">
+                      <div class="header__lang-btn">
+                        Eng
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="btn" href="#">
+                  Вход / Регистрация
+                  <i class="btn__icon btn__icon--stroke">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M8.89844 7.56023C9.20844 3.96023 11.0584 2.49023 15.1084 2.49023H15.2384C19.7084 2.49023 21.4984 4.28023 21.4984 8.75023V15.2702C21.4984 19.7402 19.7084 21.5302 15.2384 21.5302H15.1084C11.0884 21.5302 9.23844 20.0802 8.90844 16.5402"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2 12H14.88" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M12.6484 8.6499L15.9984 11.9999L12.6484 15.3499" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__lang accordion">
+            <div class="header__lang-item">
+              <div class="header__lang-block ">
+                <img class="header__lang-flag header__lang-flag--first"
+                  src="./assets/images/icons/russian-federation.svg" alt="">
+                <img class="header__lang-flag header__lang-flag--last" src="./assets/images/icons/eng.svg" alt="">
+              </div>
+              <div class="header__lang-now">
+                Ru
+              </div>
+            </div>
+            <div class="accordion__content accordion__content--abs">
+              <div class="header__lang-box">
+                <div class="header__lang-btn">
+                  Eng
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn" href="#">
+            Вход / Регистрация
+            <i class="btn__icon btn__icon--stroke">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M8.89844 7.56023C9.20844 3.96023 11.0584 2.49023 15.1084 2.49023H15.2384C19.7084 2.49023 21.4984 4.28023 21.4984 8.75023V15.2702C21.4984 19.7402 19.7084 21.5302 15.2384 21.5302H15.1084C11.0884 21.5302 9.23844 20.0802 8.90844 16.5402"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2 12H14.88" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M12.6484 8.6499L15.9984 11.9999L12.6484 15.3499" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </i>
+          </a>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="top">
+        <div class="top__wrapper">
+          <img class="top__bg" src="./assets/images/top/bg.png" alt="">
+          <div class="container">
+            <div class="top__inner">
+              <div class="top__item">
+                <h1 class="top__title title">
+                  Приём криптовалюты на&nbsp;своём сайте <span>бесплатно</span>
+                </h1>
+                <div class="top__box">
+                  <div class="top__box-item">
+                    <p class="top__box-title">
+                      0,1% коммиссия
+                    </p>
+                    <p class="top__box-text">
+                      Воспользуйтесь нашим сервером и платите 0.1% от ваших платежей!
+                    </p>
+                    <a class="btn btn--alt" href="#">
+                      Подключиться к нам
+                      <i class="btn__icon btn__icon--stroke">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M8.90625 19.9201L15.4263 13.4001C16.1963 12.6301 16.1963 11.3701 15.4263 10.6001L8.90625 4.08008"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <div class="top__box-item">
+                    <p class="top__box-title">
+                      БесплАтно!
+                    </p>
+                    <p class="top__box-text">
+                      Разверните наш мерчант на своём сервере и пользуйтесь бесплатно!
+                    </p>
+                    <a class="btn btn--alt btn--white" href="#">
+                      Инструкция по установке
+                      <i class="btn__icon btn__icon--fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                          <path
+                            d="M3.13013 8L3.29412 5.1875L0.869875 6.73611L0 5.26389L2.58824 4L0 2.73611L0.869875 1.26389L3.29412 2.8125L3.13013 0H4.86275L4.70588 2.8125L7.13013 1.26389L8 2.73611L5.40463 4L8 5.26389L7.13013 6.73611L4.70588 5.1875L4.86275 8H3.13013Z"
+                            fill="#2240C4" />
+                        </svg>
+                      </i>
+                    </a>
+                    <p class="top__box-gray">
+                      *Наши админы всё настроют за 100$
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="top__item">
+                <img class="top__item-img" src="./assets/images/top/1.png" alt="">
+                <div class="top__item-flex">
+                  <a class="btn btn--green" href="#">
+                    <div class="btn__box">
+                      Демо-платеж
+                      <i class="btn__icon btn__icon--stroke">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M8.66406 7.33337L14.1307 1.8667" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M14.6687 4.5335V1.3335H11.4688" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M7.33594 1.3335H6.0026C2.66927 1.3335 1.33594 2.66683 1.33594 6.00016V10.0002C1.33594 13.3335 2.66927 14.6668 6.0026 14.6668H10.0026C13.3359 14.6668 14.6693 13.3335 14.6693 10.0002V8.66683"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                    </div>
+                  </a>
+                  <a class="btn btn--green" href="#">
+                    <div class="btn__box">
+                      Демо-кабинет
+                      <i class="btn__icon btn__icon--stroke">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M8.66406 7.33337L14.1307 1.8667" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M14.6687 4.5335V1.3335H11.4688" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M7.33594 1.3335H6.0026C2.66927 1.3335 1.33594 2.66683 1.33594 6.00016V10.0002C1.33594 13.3335 2.66927 14.6668 6.0026 14.6668H10.0026C13.3359 14.6668 14.6693 13.3335 14.6693 10.0002V8.66683"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="top__elem">
+              <div class="top__elem-box">
+                <div class="top__elem-top">
+                  <i class="top__elem-icon">
+                    <img class="top__elem-img" src="assets/images/top/2.png" alt="">
+                  </i>
+                  <p class="top__elem-text">
+                    GitHub
+                  </p>
+                  <i class="top__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M12.0058 9.1835L12.7176 8.47168C14.1412 7.04803 14.1459 4.71458 12.7176 3.28623C11.2939 1.86258 8.96049 1.85787 7.53213 3.28623L6.82031 3.99805"
+                        stroke="#374664" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.99514 6.82175L3.28804 7.52886C1.85968 8.95721 1.85968 11.286 3.28804 12.7143C4.71168 14.1379 7.04513 14.1427 8.47349 12.7143L9.18059 12.0072"
+                        stroke="#374664" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M6.11719 9.88574L9.88842 6.11451" stroke="#374664" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                </div>
+                <p class="top__elem-title">
+                  Открытый
+                  <br>
+                  исходный код
+                </p>
+                <a class="top__elem-link" href="#">
+                  Почему мы open-source?
+                </a>
+              </div>
+              <div class="top__elem-box">
+                <div class="top__elem-top">
+                  <i class="top__elem-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                      <path d="M11.4297 20.3601L20.1497 11.6401" stroke="#808080" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M11.976 13.8269C12.8817 13.8269 13.6159 13.0926 13.6159 12.1869C13.6159 11.2811 12.8817 10.5469 11.976 10.5469C11.0702 10.5469 10.3359 11.2811 10.3359 12.1869C10.3359 13.0926 11.0702 13.8269 11.976 13.8269Z"
+                        stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M20.6947 21.4533C21.6004 21.4533 22.3347 20.7191 22.3347 19.8133C22.3347 18.9076 21.6004 18.1733 20.6947 18.1733C19.7889 18.1733 19.0547 18.9076 19.0547 19.8133C19.0547 20.7191 19.7889 21.4533 20.6947 21.4533Z"
+                        stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.9974 29.3332C23.3612 29.3332 29.3307 23.3636 29.3307 15.9998C29.3307 8.63604 23.3612 2.6665 15.9974 2.6665C8.6336 2.6665 2.66406 8.63604 2.66406 15.9998C2.66406 23.3636 8.6336 29.3332 15.9974 29.3332Z"
+                        stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                </div>
+                <p class="top__elem-title">
+                  Без комиссий!
+                  <!-- <br> -->
+                  Вообще никаких!
+                </p>
+                <a class="top__elem-link" href="#">
+                  Как мы можем быть полностью бесплатными?
+                </a>
+              </div>
+              <div class="top__elem-box">
+                <div class="top__elem-top">
+                  <i class="top__elem-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                      <path d="M10.6667 13.3335L8 16.0002L10.6667 18.6668" stroke="#808080" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.3359 13.3335L24.0026 16.0002L21.3359 18.6668" stroke="#808080" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.9974 29.3332C23.3612 29.3332 29.3307 23.3636 29.3307 15.9998C29.3307 8.63604 23.3612 2.6665 15.9974 2.6665C8.6336 2.6665 2.66406 8.63604 2.66406 15.9998C2.66406 23.3636 8.6336 29.3332 15.9974 29.3332Z"
+                        stroke="#808080" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M17.3307 12.8936L14.6641 19.1069" stroke="#808080" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                </div>
+                <p class="top__elem-title">
+                  Отправка криптовалюты по API
+                </p>
+                <a class="top__elem-link" href="#">
+                  Также вы сможете пополнить свой кошелек и отправлять с него крипту через API
+                </a>
+              </div>
+              <div class="top__elem-box">
+                <div class="top__elem-top top__elem-top--alt">
+                  <img class="top__elem-img top__elem-img--alt" src="assets/images/top/3.svg" alt="">
+                  <img class="top__elem-img top__elem-img--alt" src="assets/images/top/4.svg" alt="">
+                  <img class="top__elem-img top__elem-img--alt" src="assets/images/top/5.svg" alt="">
+                  <img class="top__elem-img top__elem-img--alt" src="assets/images/top/6.svg" alt="">
+                  <img class="top__elem-img top__elem-img--alt" src="assets/images/top/7.svg" alt="">
+                </div>
+                <p class="top__elem-title">
+                  Мультивалютность
+                </p>
+                <a class="top__elem-link" href="#">
+                  Какую крипту мы принмаем?
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="works">
+        <div class="works__wrapper">
+          <div class="container">
+            <h2 class="works__title title">
+              Как это работает
+            </h2>
+            <div class="works__inner tab">
+              <div class="works__target">
+                <div class="works__target-item tab__target tab__target--active">
+                  Хождение денег
+                </div>
+                <div class="works__target-item tab__target">
+                  Устройство нашего продукта
+                </div>
+              </div>
+              <div class="tab__info tab__info--active tab__info--opacity">
+                <div class="works__overflow">
+                  <div class="works__item">
+                    <div class="works__item-top">
+                      <a class="btn btn--lightBlue" href="#">
+                        ваши клиенты
+                      </a>
+                      <a class="btn btn--lightBlue" href="#">
+                        Горячий кошелек
+                      </a>
+                      <a class="btn btn--lightBlue" href="#">
+                        Биржа
+                      </a>
+                      <a class="btn btn--lightBlue" href="#">
+                        Ваш холодный кошелек
+                      </a>
+                    </div>
+                    <img class="works__item-img" src="./assets/images/works/bg.svg" alt="">
+                    <div class="works__item-bot">
+                      <div class="works__item-box mr">
+                        <i class="works__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                              fill="#374664" />
+                            <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </i>
+                        <a class="works__item-link" href="#">
+                          <span>Для чего нужны</span> <span>горячие кошельки?</span>
+                        </a>
+                      </div>
+                      <div class="works__item-block mr">
+                        <div class="works__item-fon">
+                          <p class="works__item-text">
+                            Платят вам за товары каждый на свой кошелек
+                          </p>
+                        </div>
+                      </div>
+                      <div class="works__item-box mr">
+                        <i class="works__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                              fill="#374664" />
+                            <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </i>
+                        <a class="works__item-link" href="#">
+                          <span>Почему мы самые</span> <span>выгодные?</span>
+                        </a>
+                      </div>
+                      <div class="works__item-block mr">
+                        <div class="works__item-fon">
+                          <p class="works__item-text">
+                            Экономно собираем все деньги в ваш холодные кошельки или обмениваем всё на бирже в
+                            StableCoin
+                          </p>
+                        </div>
+                      </div>
+                      <div class="works__item-box mr">
+                        <i class="works__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                              fill="#374664" />
+                            <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </i>
+                        <a class="works__item-link" href="#">
+                          <span>Для чего нам</span> <span>биржа?</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab__info">
+                <div class="works__item">
+                  <div class="works__item-top">
+                    <a class="btn btn--lightBlue" href="#">
+                      ваши клиенты
+                    </a>
+                    <a class="btn btn--lightBlue" href="#">
+                      Горячий кошелек
+                    </a>
+                    <a class="btn btn--lightBlue" href="#">
+                      Биржа
+                    </a>
+                    <a class="btn btn--lightBlue" href="#">
+                      Ваш холодный кошелек
+                    </a>
+                  </div>
+                  <img class="works__item-img" src="./assets/images/works/bg.svg" alt="">
+                  <div class="works__item-bot">
+                    <div class="works__item-box mr">
+                      <i class="works__item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                            fill="#374664" />
+                          <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                      <a class="works__item-link" href="#">
+                        <span>Для чего нужны</span> <span>горячие кошельки?</span>
+                      </a>
+                    </div>
+                    <div class="works__item-block mr">
+                      <div class="works__item-fon">
+                        <p class="works__item-text">
+                          Платят вам за товары каждый на свой кошелек
+                        </p>
+                      </div>
+                    </div>
+                    <div class="works__item-box mr">
+                      <i class="works__item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                            fill="#374664" />
+                          <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                      <a class="works__item-link" href="#">
+                        <span>Почему мы самые</span> <span>выгодные?</span>
+                      </a>
+                    </div>
+                    <div class="works__item-block mr">
+                      <div class="works__item-fon">
+                        <p class="works__item-text">
+                          Экономно собираем все деньги в ваш холодные кошельки или обмениваем всё на бирже в StableCoin
+                        </p>
+                      </div>
+                    </div>
+                    <div class="works__item-box mr">
+                      <i class="works__item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M7 20H13C18 20 20 18 20 13V7C20 2 18 0 13 0H7C2 0 0 2 0 7V13C0 18 2 20 7 20Z"
+                            fill="#374664" />
+                          <path d="M10 15V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M9.99219 6H10.0012" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </i>
+                      <a class="works__item-link" href="#">
+                        <span>Для чего нам</span> <span>биржа?</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="step">
+        <div class="step__wrapper">
+          <div class="container">
+            <h2 class="step__title title">
+              Как нас установить
+            </h2>
+            <div class="step__inner">
+              <div class="step__item">
+                <p class="step__item-num">
+                  1
+                </p>
+                <div class="step__item-box">
+                  <p class="step__item-title">
+                    Download ISO image
+                  </p>
+                  <div class="step__item-block">
+                    <p class="step__item-text">
+                      The ISO image file is an image of a disk. Download the Proxmox VE ISO, then copy it to a USB flash
+                      drive or CD/DVD in order to use it.
+                    </p>
+                    <a class="btn" href="#">
+                      Download ISO Image
+                      <i class="btn__icon btn__icon--fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M3.75 19.5002H20.25C20.469 19.5002 20.6488 19.5705 20.7892 19.711C20.9298 19.8515 21 20.0312 21 20.2502C21 20.4692 20.9298 20.649 20.7892 20.7895C20.6488 20.93 20.469 21.0002 20.25 21.0002H3.75C3.531 21.0002 3.35125 20.93 3.21075 20.7895C3.07025 20.649 3 20.4692 3 20.2502C3 20.0312 3.07025 19.8515 3.21075 19.711C3.35125 19.5705 3.531 19.5002 3.75 19.5002ZM12.75 13.5475L18.2812 8.01623L19.3597 9.07073L11.9303 16.5002L4.50075 9.07073L5.55525 8.01623L11.2508 13.7117V3.00098H12.7507V13.5482L12.75 13.5475Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__item">
+                <p class="step__item-num">
+                  2
+                </p>
+                <div class="step__item-box">
+                  <p class="step__item-title">
+                    Boot from USB or CD/DVD
+                  </p>
+                  <div class="step__item-block">
+                    <div class="step__item-column">
+                      <p class="step__item-text">
+                        Press 'Enter' to start the installation wizard on your dedicated hardware.
+                      </p>
+                      <p class="step__item-text">
+                        If you need help with the installation, read the documentation or get a subscription for
+                        technical
+                        support.
+                      </p>
+                    </div>
+                    <a class="btn" href="#">
+                      Download ISO Image
+                      <i class="btn__icon btn__icon--fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M3.75 19.5002H20.25C20.469 19.5002 20.6488 19.5705 20.7892 19.711C20.9298 19.8515 21 20.0312 21 20.2502C21 20.4692 20.9298 20.649 20.7892 20.7895C20.6488 20.93 20.469 21.0002 20.25 21.0002H3.75C3.531 21.0002 3.35125 20.93 3.21075 20.7895C3.07025 20.649 3 20.4692 3 20.2502C3 20.0312 3.07025 19.8515 3.21075 19.711C3.35125 19.5705 3.531 19.5002 3.75 19.5002ZM12.75 13.5475L18.2812 8.01623L19.3597 9.07073L11.9303 16.5002L4.50075 9.07073L5.55525 8.01623L11.2508 13.7117V3.00098H12.7507V13.5482L12.75 13.5475Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__item">
+                <p class="step__item-num">
+                  3
+                </p>
+                <div class="step__item-box">
+                  <p class="step__item-title">
+                    Configure the host machine
+                  </p>
+                  <div class="step__item-block">
+                    <div class="step__item-column">
+                      <p class="step__item-text">
+                        You can configure the host easily via the web browser. No need to install a separate management
+                        tool.
+                      </p>
+                      <p class="step__item-text">
+                        Find all details in the documentation:
+                      </p>
+                    </div>
+                    <a class="btn" href="#">
+                      Download ISO Image
+                      <i class="btn__icon btn__icon--fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M3.75 19.5002H20.25C20.469 19.5002 20.6488 19.5705 20.7892 19.711C20.9298 19.8515 21 20.0312 21 20.2502C21 20.4692 20.9298 20.649 20.7892 20.7895C20.6488 20.93 20.469 21.0002 20.25 21.0002H3.75C3.531 21.0002 3.35125 20.93 3.21075 20.7895C3.07025 20.649 3 20.4692 3 20.2502C3 20.0312 3.07025 19.8515 3.21075 19.711C3.35125 19.5705 3.531 19.5002 3.75 19.5002ZM12.75 13.5475L18.2812 8.01623L19.3597 9.07073L11.9303 16.5002L4.50075 9.07073L5.55525 8.01623L11.2508 13.7117V3.00098H12.7507V13.5482L12.75 13.5475Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+  </div>
+
+
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
